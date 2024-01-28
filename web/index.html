@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Pulsa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Selamat datang di Toko Pulsa</h1>
+        </header>
+        <section>
+            <p>Silakan masukkan nama, nomor telepon, dan pilih pulsa yang Anda inginkan:</p>
+            <form action="Servlet" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="number">Nomor Telepon:</label>
+                <input type="text" id="number" name="number" required>
+
+                <p>Pilih pulsa:</p>
+                <label><input type="radio" name="credit" value="50000"> 50.000</label><br>
+                <label><input type="radio" name="credit" value="100000"> 100.000</label><br>
+                <label><input type="radio" name="credit" value="200000"> 200.000</label><br>
+                <label><input type="radio" name="credit" value="500000"> 500.000</label><br>
+
+                <button type="submit" id="submitBtn">Submit</button>
+
+            </form>
+        </section>
+    </div>
+</body>
+</html>
